@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 400px;
+}
+
+input, textarea {
+  resize: none;
+  background: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 17px 20px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #5F5D5D;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #5F5D5D;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #5F5D5D;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #5F5D5D;
+}
+input::placeholder, textarea::placeholder {
+  color: #5F5D5D;
+}
+
+@media screen and (max-width: 1912px) {
+  .container {
+    margin: 0 300px;
+  }
+}
+@media screen and (max-width: 1605px) {
+  .container {
+    margin: 0 150px;
+  }
+}
+.title {
+  font-weight: 500;
+  color: #000000;
+}
+
+button {
+  cursor: pointer;
+  background: #34547A;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  text-align: center;
+  padding: 25px 41px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+button:active {
+  background: #1568c9;
+}
+
+header {
+  background: #EEEFF1;
+  height: 100vh;
+}
+header .container.parent {
+  padding-top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  alig-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav > div > a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 42px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  font-weight: 400;
+}
+header nav > div > a:hover {
+  color: #34547A;
+}
+header nav > div:first-child {
+  margin-left: 0;
+}
+header section.preview {
+  padding-top: 162px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header section.preview .text {
+  margin-left: 100px;
+}
+header section.preview .text .title {
+  font-size: 48px;
+}
+header section.preview .text p {
+  padding-top: 60px;
+  width: 540px;
+  color: #727272;
+}
+header section.preview .text button {
+  margin-top: 60px;
+}
+
+main section.about-me {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 119px 0;
+}
+main section.about-me .title {
+  font-size: 32px;
+}
+main section.about-me p {
+  margin-top: 50px;
+  color: #727272;
+  width: 540px;
+}
+main section.projects {
+  background: #34547A;
+  padding: 100px 0;
+}
+main section.projects .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section.projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main section.projects .project .project-text {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+main section.projects .project .project-text .project-title {
+  font-size: 21px;
+}
+main section.projects .project .project-text .project-descr {
+  font-size: 16px;
+}
+main section.my-skills {
+  margin-top: 102px;
+  margin-bottom: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section.my-skills .my-skills-and-title {
+  margin-right: 150px;
+}
+main section.my-skills .skill {
+  margin-top: 30px;
+}
+main section.my-skills .skill:first-child {
+  margin-top: 50px;
+}
+main section.my-skills .image img {
+  width: 555px;
+}
+main section.my-skills .title {
+  font-size: 32px;
+}
+main section.my-skills .skill-progress {
+  background: #C4C4C4;
+  height: 4px;
+  margin-top: 20px;
+  width: 349.36px;
+}
+main section.my-skills .skill-progress .skill-progress-value {
+  background: #34547A;
+  height: 4px;
+}
+main section.what-im-work {
+  background: #EEEFF1;
+  padding: 100px 0;
+  text-align: center;
+}
+main section.what-im-work p {
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  color: #727272;
+}
+main section.what-im-work .title {
+  font-size: 32px;
+}
+main section.what-im-work .container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main section.what-im-work video {
+  margin-top: 57px;
+}
+main section.pictures {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+main section.pictures > div.picture img, main section.pictures > img {
+  width: 100%;
+}
+main section.my-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 102px;
+  margin-bottom: 102px;
+}
+main section.form {
+  background: #EEEFF1;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+}
+main section.form .title {
+  font-size: 32px;
+}
+main section.form p {
+  margin: 0;
+  width: 540px;
+  color: #727272;
+  margin-top: 50px !important;
+}
+main section.form form {
+  width: 600px;
+  margin-top: 65px;
+}
+main section.form form .inputs {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 20px;
+      grid-template-areas: "name . email" "message message message" "message message message";
+}
+main section.form form button {
+  margin-top: 50px;
+}
+main section.form form .first-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+main section.form form .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: email;
+}
+main section.form form input {
+  width: 100%;
+}
+main section.form form .name-and-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section.form form .message {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: message;
+  width: 100%;
+  height: 175px;
+}
+
+footer {
+  background: #34547A;
+  padding: 50px 0;
+  color: white;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .social-networks > div {
+  margin-left: 20px;
+}
+footer .text .title {
+  color: white !important;
+  font-size: 21px;
+}
+footer .text .footer-text {
+  margin-top: 20px;
+}

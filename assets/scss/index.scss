@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 400px;
+}
+
+input, textarea {
+  resize: none;
+  background: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 17px 20px;
+
+  &::placeholder {
+    color: #5F5D5D;
+  }
+}
+
+@media screen and (max-width: 1912px) {
+  .container {
+    margin: 0 300px;
+  }
+}
+
+@media screen and (max-width: 1605px) {
+  .container {
+    margin: 0 150px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  color: #000000;
+}
+
+button {
+  cursor: pointer;
+  background: #34547A;
+  transition: background-color .5s;
+  text-align: center;
+  padding: 25px 41px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+
+  &:active {
+    background: #1568c9;
+  }
+}
+
+header {
+  background: #EEEFF1;
+  height: 100vh;
+
+  .container.parent {
+    padding-top: 57px;
+    display: flex;
+    alig-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    > div {
+      > a {
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 42px;
+        transition: color .5s;
+        font-weight: 400;
+
+        &:hover {
+          color: #34547A;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  section.preview {
+    padding-top: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      margin-left: 100px;
+
+      .title {
+        font-size: 48px;
+      }
+
+      p {
+        padding-top: 60px;
+        width: 540px;
+        color: #727272
+      }
+
+      button {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+main {
+  section.about-me {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 119px 0;
+
+    .title {
+      font-size: 32px;
+    }
+
+    p {
+      margin-top: 50px;
+      color: #727272;
+      width: 540px;
+    }
+  }
+
+  section.projects {
+    background: #34547A;
+    padding: 100px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .project {
+      display: flex;
+
+      .project-text {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+
+        .project-title {
+          font-size: 21px;
+        }
+
+        .project-descr {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  section.my-skills {
+    margin-top: 102px;
+    margin-bottom: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .my-skills-and-title {
+      margin-right: 150px;
+    }
+
+    .skill {
+      &:first-child {
+        margin-top: 50px;
+      }
+
+      margin-top: 30px;
+    }
+
+    .image img {
+      width: 555px;
+    }
+
+    .title {
+      font-size: 32px;
+    }
+
+    .skill-progress {
+      background: #C4C4C4;
+      height: 4px;
+      margin-top: 20px;
+      width: 349.36px;
+
+      .skill-progress-value {
+        background: #34547A;
+        height: 4px;
+        //width: 50%;
+      }
+    }
+  }
+
+  section.what-im-work {
+    background: #EEEFF1;
+    padding: 100px 0;
+    text-align: center;
+
+    p {
+      width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      color: #727272;
+    }
+
+    .title {
+      font-size: 32px;
+    }
+
+    .container {
+      display: grid;
+      justify-content: center;
+    }
+
+    video {
+      margin-top: 57px;
+    }
+  }
+
+  section.pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    //grid-template-rows: repeat(4, 0px);
+
+    > div.picture img, > img {
+      width: 100%;
+    }
+  }
+
+  section.my-partners {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 102px;
+    margin-bottom: 102px;
+
+    //.partner img {
+    //  width: 120px;
+    //  height: 120px;
+    //}
+  }
+
+  section.form {
+    background: #EEEFF1;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    padding: 100px 0;
+
+    .title {
+      font-size: 32px;
+    }
+
+    p {
+      margin: 0;
+      width: 540px;
+      color: #727272;
+      margin-top: 50px !important;
+    }
+
+    form {
+      width: 600px;
+      margin-top: 65px;
+
+      .inputs {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-areas:
+              'name . email'
+              'message message message'
+              'message message message';
+      }
+
+      button {
+        margin-top: 50px;
+      }
+
+      .first-name {
+        grid-area: name;
+      }
+
+      .email {
+        grid-area: email;
+      }
+
+      input {
+        //width: 240px;
+        width: 100%;
+      }
+
+      .name-and-email {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .message {
+        grid-area: message;
+        //max-width: ;
+        width: 100%;
+        height: 175px;
+      }
+    }
+  }
+}
+
+footer {
+  background: #34547A;
+  padding: 50px 0;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-networks {
+    display: flex;
+    > div {
+      margin-left: 20px;
+    }
+  }
+
+  .text{
+    .title {
+      color: white !important;
+      font-size: 21px;
+    }
+    .footer-text{
+      margin-top: 20px;
+    }
+  }
+}
